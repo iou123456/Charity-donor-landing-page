@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope Foundation - Making a Difference</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <i class="fas fa-hands-helping"></i>
+                    <span>Hope Foundation</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#causes">Causes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="donate-btn" onclick="openDonationModal()">Donate Now</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home"> 
+        <div class="container">
+            <h1>Together We Can Make a Difference</h1>
+            <p>Join us in our mission to provide education, healthcare, and hope to underprivileged communities around the world. Every donation makes an impact.</p>
+            <div class="hero-btns">
+                <a href="#" class="donate-btn" onclick="openDonationModal()">Donate Now</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Children smiling">
+                <div class="floating-elements">
+                    <div class="floating-element" style="width: 30px; height: 30px; top: 20%; left: 10%; animation-delay: 0s;"></div>
+                    <div class="floating-element" style="width: 50px; height: 50px; top: 60%; left: 80%; animation-delay: 0.5s;"></div>
+                    <div class="floating-element" style="width: 20px; height: 20px; top: 30%; left: 70%; animation-delay: 1s;"></div>
+                    <div class="floating-element" style="width: 40px; height: 40px; top: 80%; left: 20%; animation-delay: 1.5s;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Our Foundation</h2>
+                <p>We are a non-profit organization dedicated to creating positive change in communities worldwide.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission to Help Those in Need</h3>
+                    <p>Founded in 2010, Hope Foundation has been at the forefront of humanitarian efforts, providing essential services to over 1 million people across 20 countries.</p>
+                    <p>Our team of dedicated professionals and volunteers work tirelessly to ensure that every donation reaches those who need it most, with transparency and efficiency.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">1M+</div>
+                            <div class="stat-label">People Helped</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Countries</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Volunteers</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Volunteers working">
+                    <div class="image-circle">10+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Causes Section -->
+    <section class="causes" id="causes">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Causes</h2>
+                <p>We focus on several key areas to create maximum impact in the communities we serve.</p>
+            </div>
+            <div class="causes-grid">
+                <div class="cause-card" data-cause="education">
+                    <div class="cause-image">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Education">
+                    </div>
+                    <div class="cause-content">
+                        <h3>Education for All</h3>
+                        <p>Building schools and providing scholarships to ensure every child has access to quality education.</p>
+                        <div class="progress-container">
+                            <div class="progress-text">
+                                <span>Raised: $45,000</span>
+                                <span>Goal: $75,000</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="--progress: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="cause-footer">
+                            <span class="raised-amount">60% Funded</span>
+                            <a href="#" class="btn btn-primary" onclick="openDonationModal('education')">Donate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cause-card" data-cause="healthcare">
+                    <div class="cause-image">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Healthcare">
+                    </div>
+                    <div class="cause-content">
+                        <h3>Healthcare Access</h3>
+                        <p>Providing medical care, vaccinations, and health education to underserved communities.</p>
+                        <div class="progress-container">
+                            <div class="progress-text">
+                                <span>Raised: $68,000</span>
+                                <span>Goal: $100,000</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="--progress: 68%"></div>
+                            </div>
+                        </div>
+                        <div class="cause-footer">
+                            <span class="raised-amount">68% Funded</span>
+                            <a href="#" class="btn btn-primary" onclick="openDonationModal('healthcare')">Donate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cause-card" data-cause="water">
+                    <div class="cause-image">
+                        <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Clean Water">
+                    </div>
+                    <div class="cause-content">
+                        <h3>Clean Water Initiative</h3>
+                        <p>Building wells and water purification systems in areas without access to clean drinking water.</p>
+                        <div class="progress-container">
+                            <div class="progress-text">
+                                <span>Raised: $32,000</span>
+                                <span>Goal: $50,000</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="--progress: 64%"></div>
+                            </div>
+                        </div>
+                        <div class="cause-footer">
+                            <span class="raised-amount">64% Funded</span>
+                            <a href="#" class="btn btn-primary" onclick="openDonationModal('water')">Donate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-pattern"></div>
+        <div class="container">
+            <h2>Join Us in Making a Difference</h2>
+            <p>Your support can change lives. Whether through donations, volunteering, or spreading awareness, every action counts.</p>
+            <a href="#" class="btn btn-secondary">Get Involved Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Hope Foundation</h3>
+                    <p>Making the world a better place through education, healthcare, and community development initiatives.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#causes">Our Causes</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 GPO, Nairobi City</li>
+                        <li><i class="fas fa-phone"></i> +(254) 712 345 678</li>
+                        <li><i class="fas fa-envelope"></i> info@hopefoundation.org</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter to stay updated on our projects and impact.</p>
+                    <form>
+                        <input type="email" placeholder="Your Email" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none;">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Hope Foundation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Donation Modal -->
+    <div id="donationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Support Our Causes</h2>
+            <form id="donationForm">
+                <!-- Cause Selection -->
+                <div class="form-group">
+                    <label>Select Cause to Support</label>
+                    <div class="cause-options">
+                        <label class="cause-option">
+                            <input type="radio" name="cause" value="education" checked>
+                            <div class="cause-card">
+                                <h4>Education for All</h4>
+                                <p>Building schools and scholarships</p>
+                            </div>
+                        </label>
+                        <label class="cause-option">
+                            <input type="radio" name="cause" value="healthcare">
+                            <div class="cause-card">
+                                <h4>Healthcare Access</h4>
+                                <p>Medical care and vaccinations</p>
+                            </div>
+                        </label>
+                        <label class="cause-option">
+                            <input type="radio" name="cause" value="water">
+                            <div class="cause-card">
+                                <h4>Clean Water</h4>
+                                <p>Wells and purification systems</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Donation Amount -->
+                <div class="form-group">
+                    <label for="amount">Donation Amount ($)</label>
+                    <div class="amount-options">
+                        <button type="button" class="amount-option" data-amount="25">$25</button>
+                        <button type="button" class="amount-option" data-amount="50">$50</button>
+                        <button type="button" class="amount-option" data-amount="100">$100</button>
+                        <button type="button" class="amount-option" data-amount="250">$250</button>
+                        <input type="number" id="amount" min="1" placeholder="Other amount" required>
+                    </div>
+                </div>
+                
+                <!-- Donor Info -->
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Complete Donation</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
